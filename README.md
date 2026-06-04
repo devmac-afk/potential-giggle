@@ -25,7 +25,7 @@ pip install -r requirements.txt
 2. Set your Google Gemini key:
 
 ```bash
-set GOOGLE_API_KEY=your_key_here
+set GROQ_API_KEY=your_key_here
 ```
 
 3. Start the app:
