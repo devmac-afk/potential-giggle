@@ -38,4 +38,4 @@ streamlit run app.py
 
 - The app uses one LangChain research agent and two tools: web search and URL fetch.
 - It is intentionally simple so it is easy to understand and explain in an interview.
-- The model provider is Google Gemini, so you do not need a paid OpenAI API key.
+- The model provider is GROQ llama LLM for better inferencing and free.
