@@ -31,7 +31,6 @@ The architecture follows a modern LangGraph Agent loop integrated with a Streaml
 ## 5. How Challenges Were Solved
 1. **Migrating to Groq:** To solve the rate limit issues, the LLM provider was completely swapped to **Groq** using the `llama-3.3-70b-versatile` model. Groq provides significantly faster token generation and a much more generous free tier, allowing the agent to loop freely without exhausting quota.
 2. **Adopting LangGraph:** The codebase was refactored to replace the deprecated `AgentExecutor` with the modern `create_react_agent` from the `langgraph` library. This future-proofed the code and solved the import errors on the cloud environment.
-3. **Secrets Management:** A `.gitignore` file was introduced to prevent the local `.env` file from being tracked. On deployment, Streamlit Cloud's built-in "Secrets Management" dashboard was used to inject the `GROQ_API_KEY` directly into the cloud environment safely.
 
 ---
 
